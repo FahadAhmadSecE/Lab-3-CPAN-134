@@ -1,0 +1,34 @@
+<html>
+<body>
+<center><h1>Blog Post Creation</h1></center>
+
+<style>
+input, textarea {
+    border: 4px solid rgba(10, 92, 131, 0.5)
+}
+
+</style>
+
+<input type="text" name="Title" placeholder="Enter title"> 
+<br>
+<br>
+<input type="text" name="name" placeholder="Enter name">
+<br>
+<br>
+<textarea name="post" rows="5" cols="80" placeholder="Enter your content"></textarea>
+<br>
+<select name="category" id="categorySelect">
+    <option value="">--Choose Category--</option>
+    <option value="Rant">Rant</option>
+    <option value="Discussion">Discussion</option>
+    <option value="Political">Political</option>
+</select>
+<br>
+<button type="button" onclick="submit()">Submit Form</button>
+<script>
+    function submit() {
+        alert("Form Submitted!");
+    }
+</script>
+</body>
+</html>
